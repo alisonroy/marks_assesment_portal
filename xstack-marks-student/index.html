@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON</title>
+  </head>
+  <body>
+    <!-- <input type="text" id="name" />
+    <button onclick="post()">Post</button>
+    <p id="content"></p> -->
+
+    <p id="content"></p>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      //   function post() {
+      //     var name = document.getElementById("name").value;
+
+      //     // AJAX request
+      //     $.ajax({
+      //       type: "POST",
+      //       url: "query.php",
+      //       datatype: "html",
+      //       data: {
+      //         name: name,
+      //       },
+      //       success: function (response) {
+      //         console.log(response);
+      //         var parsedResponse = JSON.parse(response);
+      //         console.log(parsedResponse);
+      //         document.getElementById("content").innerHTML = parsedResponse;
+      //       },
+      //       error: function (error) {},
+      //     });
+      //   }
+
+      
+
+      for(var i in data) {
+        var p = document.createElement("p");
+        p.innerHTML = data[i].subject_name;
+        document.getElementById("content").appendChild(p);
+      }
+    </script>
+  </body>
+</html>
